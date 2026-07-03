@@ -12,6 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import androidx.compose.ui.layout.onSizeChanged
 import com.fishing.android.FishType
 import com.fishing.android.FishingGameLogic
 import com.fishing.android.FishingGameState
@@ -24,6 +25,7 @@ import kotlinx.coroutines.delay
 import kotlin.random.Random
 import androidx.compose.ui.platform.LocalDensity
 import com.fishing.android.ui.FishingLocationBackground
+
 
 @Composable
 fun ReelingScreen(
@@ -133,6 +135,9 @@ fun ReelingScreen(
                     MaterialTheme.colorScheme.surfaceVariant,
                     shape = MaterialTheme.shapes.medium
                 )
+                .onSizeChanged { size ->
+                    trackWidthDp = with(density) { size.width.toDp() }
+                }
                 .padding(horizontal = 4.dp)
                 .pointerInput(Unit) {
                     awaitPointerEventScope {

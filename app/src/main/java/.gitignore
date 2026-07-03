@@ -1,0 +1,46 @@
+gitignore
+# --- Android / Kotlin Specific ---
+build/
+*.pyc
+.gradle/
+local.properties
+# Exclude the generated build folders in all modules
+**/build/
+
+# --- Android Studio / IntelliJ ---
+.idea/
+*.iml
+*.iws
+.project
+.settings/
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Device / OS Specific ---
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# --- Sensitive Files (Security) ---
+# Never commit your keystore files
+*.jks
+*.keystore
+# Google Services config (usually added later for Firebase)
+# google-services.json
+
+# --- Proguard ---
+# If you use code shrinking, exclude generated mappings
+**/proguard/
+/captures/
+
+# --- Logs ---
+*.log
+
+# --- Gradle Wrapper ---
+# Most teams commit these to ensure build consistency,
+# but if you prefer to exclude them, uncomment below:
+# !gradle-wrapper.jar
+.gradle/8.12/
