@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.10.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22"
+    }
+    ext {
+        compose_version = '1.4.8'
+    }
+}
+
+allprojects {
+    repositories {
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
