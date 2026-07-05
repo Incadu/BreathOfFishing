@@ -1,6 +1,7 @@
 gitignore
 # --- Android / Kotlin Specific ---
 build/
+build/reports/
 *.pyc
 .gradle/
 local.properties
