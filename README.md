@@ -5,6 +5,9 @@ Professional Android fishing game built with Jetpack Compose
 
 Overview
 --------
+
+https://github.com/user-attachments/assets/6cee567c-1850-4375-9e35-f3572740ff8b
+
 FishingApp is an Android application implemented with Kotlin and Jetpack Compose. The app simulates a fishing experience with dynamic fishing spots, an in-game shop, and interactive UI screens. It is structured to be modular and extensible, with a focus on reusable Compose components.
 
 Highlights
